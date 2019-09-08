@@ -9,11 +9,13 @@ I am introducing the example codes for creating the Admin React Application. It 
 ## Screens
 The below screans are available now
 * Dashboard with Sidebar Menu URL http://localhost:3000/
-![](docs/images/dashboard.png)
+<img src="docs/images/dashboard.png" width="400" height="300">
+
 * Sign In URL http://localhost:3000/signin or http://localhost:3000/login
-![](docs/images/signin.png)
+<img src="docs/images/signin.png" width="400" height="300">
+
 * Sign Up URL http://localhost:3000/signup
-![](docs/images/signup.png)
+<img src="docs/images/signup.png" width="400" height="300">
 
 
 
