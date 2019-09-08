@@ -17,7 +17,7 @@ class Dashboard extends React.Component {
 
             <div class="sidebar-header">
               <div class="user-pic">
-                <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/binoykr/react-admin-ui/master/public/imgs/user.jpg"
                   alt="User picture" />
               </div>
               <div class="user-info">
