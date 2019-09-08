@@ -8,6 +8,8 @@ import './Home.css'
 
 class Home extends React.Component {
     render() {
+        
+
         return (
             <div class="container-fluid home-page">
                 <div class="d-flex justify-content-center h-100">
