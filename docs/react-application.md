@@ -39,3 +39,4 @@ Java script files can be included in the header section:
 * [React Rounter](https://codeburst.io/getting-started-with-react-router-5c978f70df91)
 * [Login](https://bootsnipp.com/snippets/vl4R7)
 * [Dashboard](https://bootsnipp.com/snippets/Q0dAX)
+* [Font Awesome](https://stackoverflow.com/questions/21406538/how-to-use-font-awesome-icons-from-node-modules)
