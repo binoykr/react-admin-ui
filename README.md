@@ -1,5 +1,5 @@
 ## Introduction
-I am introducing the example codes for creating the Admin React Application. It provides Home Page, Sign in, Sign up,Dashboard, etc.
+I am introducing the example codes for creating the Admin React Application. It provides Home Page, Sign in, Sign up,Dashboard, etc. This source started for developing the react library for create the Admin UI. I am creating reusable components, it can be avoided the mixe of html codes and react code in our application. 
 
 ## Run Command
 
