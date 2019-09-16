@@ -47,6 +47,7 @@
   .sidebar-wrapper .sidebar-dropdown > a:after,
   .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
   .sidebar-wrapper ul li a i,
+
   .page-wrapper .page-content,
   .sidebar-wrapper .sidebar-search input.search-menu,
   .sidebar-wrapper .sidebar-search .input-group-text,
@@ -62,11 +63,24 @@
   
   /*----------------page-wrapper----------------*/
   
+
   .page-wrapper {
     height: 100vh;
   }
   
-  .page-wrapper .theme {
+  .main-wrapper {
+    top: 42px;
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    
+    overflow-y: auto;
+    position: fixed;
+  }
+
+
+  .main-wrapper .theme {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -74,18 +88,38 @@
     margin: 2px;
   }
   
-  .page-wrapper .theme.chiller-theme {
+  .main-wrappe .theme.chiller-theme {
     background: #1e2229;
   }
   
+  /*----------------topbar----------------*/
+  .topbar-wrapper {
+    top: 0px;
+  }
+
+  .topbar-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: 42px;
+    max-height: 42px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 999;
+  }
+
   /*----------------toggeled sidebar----------------*/
   
-  .page-wrapper.toggled .sidebar-wrapper {
+  .main-wrapper .page-wrapper.toggled .topbar-wrapper {
+    left: 260px;
+  }
+
+  .main-wrapper .page-wrapper.toggled .sidebar-wrapper {
     left: 0px;
   }
   
   @media screen and (min-width: 768px) {
-    .page-wrapper.toggled .page-content {
+    .main-wrapper .page-wrapper.toggled .page-content {
       padding-left: 300px;
     }
   }
@@ -98,7 +132,7 @@
     width: 35px;
     transition-delay: 0.3s;
   }
-  .page-wrapper.toggled #show-sidebar {
+  .main-wrapper .page-wrapper.toggled #show-sidebar {
     left: -40px;
   }
   /*----------------sidebar-wrapper----------------*/
@@ -360,12 +394,14 @@
   
   /*--------------------------page-content-----------------------------*/
   
+  
   .page-wrapper .page-content {
     display: inline-block;
+    max-width: 100%;
     width: 100%;
     padding-left: 0px;
-    padding-top: 20px;
   }
+  
   
   .page-wrapper .page-content > div {
     padding: 20px 40px;
@@ -418,6 +454,11 @@
       background: #31353D;
   }
   
+  .chiller-theme .topbar-wrapper {
+    background: #31353D;
+  }
+  
+
   .chiller-theme .sidebar-wrapper .sidebar-header,
   .chiller-theme .sidebar-wrapper .sidebar-search,
   .chiller-theme .sidebar-wrapper .sidebar-menu {

@@ -20,8 +20,8 @@ class DashboardPage extends React.Component {
         }
 
         return (
-            <Dashboard>
-                <SidebarContent title="ADMIN UI" userInfo={userInfo}>
+            <Dashboard title="ADMIN UI" userInfo={userInfo}>
+                <SidebarContent>
                     <Sidemenubar>
                         <SidebarDropdown title="Dashboard" font="fa fa-tachometer-alt"
                             badge={{ label: "New", type: "badge-warning" }}>
