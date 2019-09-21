@@ -26,19 +26,51 @@ class Dashboard extends React.Component {
             </a>
           </div>
 
-          <ul class="nav-toolbar">
-            <li class="nav-toolbar-item">
-              <a id="nav-close-button" class="nav-dropitem-link" href="#">
-                <i class="fa fa-bars"></i>
-              </a>
-            </li>
-            <li class="nav-toolbar-item">
-              <a class="nav-dropitem-link" href="#">
-                <i class="fa fa-search"></i>
-              </a>
-            </li>
-          </ul>
+          <div class="topbar-content">
 
+            <ul class="nav-toolbar nav-left">
+              <li class="nav-toolbar-item icon">
+                <a id="nav-close-button" class="nav-dropitem-link icon" href="#">
+                  <i class="fa fa-arrow-left"></i>
+                </a>
+              </li>
+              <li class="nav-toolbar-item icon">
+                <a class="nav-dropitem-link" href="#">
+                  <i class="fa fa-search"></i>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="nav-toolbar nav-right">
+              <li class="nav-toolbar-item icon">
+                <a class="nav-dropitem-link" href="#">
+                  <i class="fa fa-bell"></i>
+                  <span class="badge badge-pill badge-danger up">3</span>
+                </a>
+              </li>
+
+              <li class="nav-toolbar-item icon">
+                <a class="nav-dropitem-link" href="#">
+                  <i class="fa fa-envelope"></i>
+                  <span class="badge badge-pill badge-info up">5</span>
+                </a>
+              </li>
+
+              <li class="nav-toolbar-item avatar">
+                <a class="nav-dropitem-link" href="#">
+                  <span>
+                    Hi Binoy
+                  </span>
+                  <span class="avatar-online">
+                    <img src="https://raw.githubusercontent.com/binoykr/react-admin-ui/master/public/imgs/user.jpg"
+                      alt="User picture" />
+                    <i></i>
+                  </span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
         </nav>
 
       </div>

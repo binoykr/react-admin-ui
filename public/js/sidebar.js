@@ -26,17 +26,16 @@ jQuery(function ($) {
         if ($(".main-wrapper").hasClass("toggled")) {
             $(".main-wrapper").removeClass("toggled");
 
-            $("#nav-close-button i").removeClass("fa fa-bars");
-            $("#nav-close-button i").addClass("fa fa-times");
+            $("#nav-close-button i").removeClass("fa fa-arrow-left");
+            $("#nav-close-button i").addClass("fa fa-bars");
             
+            $("#nav-close-button").removeClass("nav-close-button");
             $("#nav-close-button").addClass("nav-close-button");
         } else {
             $(".main-wrapper").addClass("toggled");
 
-            $("#nav-close-button").removeClass("nav-close-button");
-
-            $("#nav-close-button i").removeClass("fa fa-times");
-            $("#nav-close-button i").addClass("fa fa-bars");
+            $("#nav-close-button i").removeClass("fa fa-bars");
+            $("#nav-close-button i").addClass("fa fa-arrow-left");
         }
     });
 
