@@ -22,20 +22,20 @@ jQuery(function ($) {
         }
     });
 
-    $("#nav-close-button").click(function () {
+    $("#navbar-top-close-button").click(function () {
         if ($(".main-wrapper").hasClass("toggled")) {
             $(".main-wrapper").removeClass("toggled");
 
-            $("#nav-close-button i").removeClass("fa fa-arrow-left");
-            $("#nav-close-button i").addClass("fa fa-bars");
+            $("#navbar-top-close-button i").removeClass("fa fa-arrow-left");
+            $("#navbar-top-close-button i").addClass("fa fa-bars");
             
-            $("#nav-close-button").removeClass("nav-close-button");
-            $("#nav-close-button").addClass("nav-close-button");
+            $("#navbar-top-close-button").removeClass("navbar-top-close-button");
+            $("#navbar-top-close-button").addClass("navbar-top-close-button");
         } else {
             $(".main-wrapper").addClass("toggled");
 
-            $("#nav-close-button i").removeClass("fa fa-bars");
-            $("#nav-close-button i").addClass("fa fa-arrow-left");
+            $("#navbar-top-close-button i").removeClass("fa fa-bars");
+            $("#navbar-top-close-button i").addClass("fa fa-arrow-left");
         }
     });
 
