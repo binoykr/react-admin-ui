@@ -18,7 +18,7 @@ class Dashboard extends React.Component {
         <nav class="topbar-navbar">
           <div class="topbar-brand">
             <a href="#">
-              <img class="brand-icon" src="https://raw.githubusercontent.com/binoykr/react-admin-ui/master/public/imgs/user.jpg"
+              <img class="brand-icon" src="https://raw.githubusercontent.com/binoykr/react-admin-ui/new-dashboard/public/imgs/b-icon.png"
                 alt="Brand Icon" />
               <span>
                 admin ui
@@ -62,11 +62,23 @@ class Dashboard extends React.Component {
                     Hi Binoy
                   </span>
                   <span class="avatar-online">
-                    <img src="https://raw.githubusercontent.com/binoykr/react-admin-ui/master/public/imgs/user.jpg"
+                    <img src="https://raw.githubusercontent.com/binoykr/react-admin-ui/new-dashboard/public/imgs/user-binoy.jpg"
                       alt="User picture" />
                     <i></i>
                   </span>
                 </a>
+                <div class="nav-toolbar-dropdown-menu menu-right">
+                  <div class="dropdown-menu-header">
+                    <h5>Notifications</h5>
+                    <span class="badge badge-round badge-danger">New 5</span>
+                  </div>
+                  <div class="dropdown-menu-container">
+                    <p>Content</p>
+                  </div>
+                  <div class="dropdown-menu-footer">
+                    <p>Footer</p>
+                  </div>
+                </div>
               </li>
 
             </ul>
