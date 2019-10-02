@@ -32,7 +32,7 @@ class Dashboard extends React.Component {
             <ul class="items left size">
               <li class="item size icon">
                 <a id="navbar-top-close-button" class="nav-link icon" href="#">
-                  <i class="fas fa-arrow-left"></i>
+                  <i class="fa fa-arrow-left"></i>
                 </a>
               </li>
               <li class="item size icon">
@@ -140,6 +140,7 @@ class Dashboard extends React.Component {
                       </a>
 
                     </div>
+                    
                   </div>
 
 

@@ -219,8 +219,8 @@
   .navbar.top .items .item .dropdown 
   .header.size, .footer.size {
     height: 50px;
+    width: 100%;
   }
-
   
   /*-------------------- navbar top items dropdown header ----------------------*/  
   .navbar.top .items .item .dropdown 
@@ -232,7 +232,8 @@
   .navbar.top .items .item .dropdown 
   .header h5 {
     font-family: Roboto, sans-serif;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 300;
     line-height: 1.2;
 
     padding: 15px 20px!important;
@@ -248,6 +249,21 @@
     height: 15px;
   }
 
+   /*-------------------- navbar top items dropdown footer ----------------------*/  
+   .navbar.top .items .item .dropdown 
+   .footer {
+     border-top: 1px solid #e4eaec;
+   }
+ 
+   .navbar.top .items .item .dropdown .footer .item {
+     flex-grow: 1;
+   }
+ 
+   .navbar.top .items .item .dropdown .footer>a {
+     padding: 15px 20px!important;
+     margin: 0;
+   }
+   
   /*-------------------- navbar top items dropdown container ----------------------*/  
   .navbar.top .items .item .dropdown 
   .container
@@ -330,6 +346,41 @@
     line-height: 25px;
   }
 
+  
+
+  /*-------------------- navbar top items dropdown footer item ----------------------*/  
+  
+  .navbar.top .items .item .dropdown .footer .item {
+    font-size: 13px;
+  }
+
+  .navbar.top .items .item .dropdown .footer .item-button {
+    display: inline-block;
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+  }
+
+  
+  /*-------------------- badge ----------------------*/  
+  .badge {
+    font-size: 60%; 
+    font-weight: 500;
+  }
+
+  .badge.icon {
+    border-radius: .60rem;
+    line-height: 1;
+  }
+
+  .badge.list {
+    line-height: 13px;
+    border-radius: .80rem;
+  }
+
+
   /*-------------------- commons : css ----------------------*/  
   .pr-10 {
     padding-right: 10px!important;
@@ -354,51 +405,6 @@
 
   .bg-orange-600 {
     background-color: #eb6709!important;
-  }
-
-  /*-------------------- navbar top items dropdown item ----------------------*/  
-  
-
-  .navbar.top .items .item .dropdown .item-button {
-    display: inline-block;
-    position: relative;
-    padding: 0px;
-    text-align: center;
-    height: 100%;
-
-  }
-
-  /*-------------------- navbar top items dropdown footer ----------------------*/  
-  .navbar.top .items .item .dropdown 
-  .footer {
-    border-top: 1px solid #e4eaec;
-  }
-
-  .navbar.top .items .item .dropdown .footer .item {
-    flex-grow: 1;
-  }
-
-  .navbar.top .items .item .dropdown .footer>a {
-    padding: 15px 20px!important;
-    margin: 0;
-  }
-
-  
-  
-  /*-------------------- badge ----------------------*/  
-  .badge {
-    font-size: 60%; 
-    font-weight: 500;
-  }
-
-  .badge.icon {
-    border-radius: .60rem;
-    line-height: 1;
-  }
-
-  .badge.list {
-    line-height: 13px;
-    border-radius: .80rem;
   }
 
   /*-------------------- theme: chiller ----------------------*/  
@@ -437,6 +443,10 @@
   .chiller-theme .navbar.top .items .item .dropdown .footer>a:hover {
     background-color: transparent!important;
     color: #7d8efa!important;
+  }
+
+  .chiller-theme .navbar.top .dropdown .footer {
+    background-color: #f3f7f9;
   }
 
   .chiller-theme .navbar.top .dropdown .group:hover {
