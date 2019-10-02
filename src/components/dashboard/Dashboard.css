@@ -154,7 +154,6 @@
     margin: 0px;
   }
 
-
   .navbar.top .items .item.avatar img {
     width: 30px;
     height: 30px;
@@ -186,9 +185,14 @@
   .navbar.top .items .item .dropdown {
     position: absolute;
     z-index: 1200;
-    display: flex;
+    display: none;
     flex-direction: column;
   }
+
+  .navbar.top .items .item .dropdown.show {
+    display: flex;
+  }
+  
 
   .navbar.top .items .item .dropdown.style {
     box-shadow: 0 3px 12px rgba(0,0,0,.05);
@@ -331,6 +335,12 @@
     color: #a3afb7;
   }
 
+  .dropdown .media .detail {
+    margin-bottom: 3px;
+    font-size: 12px;
+    color: #a3afb7;
+  }
+
   /*-------------------- navbar dropdown icon ----------------------*/  
   .dropdown .icon {
     padding: 0px;
@@ -363,27 +373,72 @@
     height: 50px;
   }
 
-  
+
+  /*-------------------- avatar ----------------------*/  
+  .avatar {
+    display: inline-block;
+    position: relative;
+    padding: 0px 5px;
+    height: 100%;
+    top: 0px;
+    margin: 0px;
+  }
+
+  .avatar.sm img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .avatar.md img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatar img {
+    border-radius: 1000px;
+  }
+
+  .avatar > i {
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    right: 2px;
+    bottom: 2px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .avatar.online > i {
+    background-color: #11c26d;
+  }
+
   /*-------------------- badge ----------------------*/  
   .badge {
-    font-size: 60%; 
-    font-weight: 500;
+    font-size: 60%!important; 
+    font-weight: 500!important;
   }
 
   .badge.icon {
-    border-radius: .60rem;
-    line-height: 1;
+    height: 17px;
+    width: 17px;
+    border-radius: .80rem!important;
+    line-height: 17px!important;
   }
 
   .badge.list {
-    line-height: 13px;
-    border-radius: .80rem;
+    line-height: 13px!important;
+    border-radius: .80rem!important;
   }
 
+  
 
   /*-------------------- commons : css ----------------------*/  
   .pr-10 {
     padding-right: 10px!important;
+  }
+
+  .show {
+    display: block;
   }
 
   /*-------------------- common : colors ----------------------*/  
