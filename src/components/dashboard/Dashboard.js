@@ -46,14 +46,14 @@ class Dashboard extends React.Component {
               <li class="item size icon">
                 <a class="nav-link" href="#">
                   <i class="fa fa-bell"></i>
-                  <span class="badge badge-pill badge-danger up">3</span>
+                  <span class="badge icon badge-pill badge-danger up">3</span>
                 </a>
               </li>
 
               <li class="item size icon">
                 <a class="nav-link" href="#">
                   <i class="fa fa-envelope"></i>
-                  <span class="badge badge-pill badge-info up">5</span>
+                  <span class="badge icon badge-pill badge-info up">5</span>
                 </a>
               </li>
 
@@ -68,17 +68,20 @@ class Dashboard extends React.Component {
                     <i></i>
                   </span>
                 </a>
-                
+
                 <div class="dropdown size style right">
                   <div class="header size">
                     <h5>Notifications</h5>
-                    <span class="badge badge-round badge-danger">New 5</span>
+                    <span class="badge list badge-round badge-danger">New 5</span>
                   </div>
                   <div class="container">
                     <p>Content</p>
                   </div>
                   <div class="footer size">
-                    <p>Footer</p>
+                    <a class="item">All notifications</a>
+                    <a class="item-button">
+                      <i class="fa fa-cog"></i>
+                    </a>
                   </div>
                 </div>
 
