@@ -1,82 +1,79 @@
 import React from 'react';
 import Dashboard from '../components/dashboard/Dashboard'
-import Sidemenubar from '../components/dashboard/Sidemenubar'
-import SidebarDropdown from '../components/dashboard/SidebarDropdown'
-import SidebarMenuitem from '../components/dashboard/SidebarMenuitem'
-import SidebarHeader from '../components/dashboard/SidebarHeader'
-import SidebarContent from '../components/dashboard/SidebarContent'
-import SidebarFooter from '../components/dashboard/SidebarFooter'
-import SidebarFooterItem from '../components/dashboard/SidebarFooterItem'
+import SidebarWrapper from '../components/dashboard/sidebar/SidebarWrapper'
+import Sidemenubar from '../components/dashboard/sidebar/Sidemenubar'
+import SidemenubarHeader from '../components/dashboard/sidebar/SidemenubarHeader'
+import SidebarDropdown from '../components/dashboard/sidebar/SidebarDropdown'
+import SidebarSubmenu from '../components/dashboard/sidebar/SidebarSubmenu'
+import SidebarMenuitem from '../components/dashboard/sidebar/SidebarMenuitem'
+import SidebarHeader from '../components/dashboard/sidebar/SidebarHeader'
+import SidebarContent from '../components/dashboard/sidebar/SidebarContent'
 
 
 class DashboardPage extends React.Component {
 
     render() {
-        var userInfo = {
-            firstname: "Binoy",
-            lastname: "K. R",
-            designation: "Developer",
-            status: "Online"
-        }
 
         return (
-            <Dashboard title="ADMIN UI" userInfo={userInfo}>
-                <SidebarContent>
-                    <Sidemenubar>
-                        <SidebarDropdown title="Dashboard" font="fa fa-tachometer-alt"
-                            badge={{ label: "New", type: "badge-warning" }}>
+            <Dashboard>
+                <SidebarWrapper>
+                    <SidebarHeader>Admin UI</SidebarHeader>
+                    <SidebarContent>
+                        <Sidemenubar>
+                            <SidemenubarHeader>General</SidemenubarHeader>
 
-                            <SidebarMenuitem label="Dashboard 1" badge={{ label: "Pro", type: "badge-success" }} />
-                            <SidebarMenuitem label="Dashboard 2" />
-                            <SidebarMenuitem label="Dashboard 3" />
+                            <SidebarDropdown title="Dashboard" font="fa fa-desktop"
+                                badge={{ label: "New", type: "badge-warning" }}>
 
-                        </SidebarDropdown>
-
-                        <SidebarDropdown title="E-commerce" font="fa fa-shopping-cart"
-                            badge={{ label: "3", type: "badge-danger" }}>
-
-                            <SidebarMenuitem label="Products" />
-                            <SidebarMenuitem label="Orders" />
-                            <SidebarMenuitem label="Credit cart" />
-
-                        </SidebarDropdown>
-
-                        <SidebarDropdown title="Components" font="far fa-gem">
-
-                            <SidebarMenuitem label="General" />
-                            <SidebarMenuitem label="Panels" />
-                            <SidebarMenuitem label="Tables" />
-                            <SidebarMenuitem label="Icons" />
-                            <SidebarMenuitem label="Forms" />
-
-                        </SidebarDropdown>
-
-                        <SidebarDropdown title="Charts" font="fa fa-chart-line">
-
-                            <SidebarMenuitem label="Pie chart" />
-                            <SidebarMenuitem label="Line chart" />
-                            <SidebarMenuitem label="Bar chart" />
-                            <SidebarMenuitem label="Histogram" />
-
-                        </SidebarDropdown>
-
-                        <SidebarHeader title="Extra" />
-
-                        <SidebarMenuitem label="Documentation" font="fa fa-book" badge={{ label: "Beta", type: "badge-primary" }} />
-                        <SidebarMenuitem label="Calendar" font="fa fa-calendar" />
-                        <SidebarMenuitem label="Examples" font="fa fa-folder" />
-
-                    </Sidemenubar>
-                </SidebarContent>
+                                <SidebarSubmenu>
+                                    <SidebarMenuitem label="Dashboard 1" badge={{ label: "Pro", type: "badge-success" }} />
+                                    <SidebarMenuitem label="Dashboard 2" />
+                                    <SidebarMenuitem label="Dashboard 3" />
+                                </SidebarSubmenu>
+                            </SidebarDropdown>
 
 
-                <SidebarFooter>
-                    <SidebarFooterItem font="fa fa-bell" badge={{ label: "1", type: "badge-warning" }} />
-                    <SidebarFooterItem font="fa fa-envelope" badge={{ label: "7", type: "badge-success" }} />
-                    <SidebarFooterItem font="fa fa-cog" sonar={true} />
-                    <SidebarFooterItem font="fa fa-power-off" />
+                            <SidebarDropdown title="E-commerce" font="fa fa-shopping-cart"
+                                badge={{ label: "3", type: "badge-danger" }}>
+                                <SidebarSubmenu>
+                                    <SidebarMenuitem label="Products" />
+                                    <SidebarMenuitem label="Orders" />
+                                    <SidebarMenuitem label="Credit cart" />
+                                </SidebarSubmenu>
+                            </SidebarDropdown>
 
-                </SidebarFooter>
+                            <SidebarDropdown title="Components" font="far fa-gem">
+                                <SidebarSubmenu>
+                                    <SidebarMenuitem label="General" />
+                                    <SidebarMenuitem label="Panels" />
+                                    <SidebarMenuitem label="Tables" />
+                                    <SidebarMenuitem label="Icons" />
+                                    <SidebarMenuitem label="Forms" />
+                                </SidebarSubmenu>
+                            </SidebarDropdown>
+
+                            <SidebarDropdown title="Charts" font="fa fa-chart-line">
+                                <SidebarSubmenu>
+                                    <SidebarMenuitem label="Pie chart" />
+                                    <SidebarMenuitem label="Line chart" />
+                                    <SidebarMenuitem label="Bar chart" />
+                                    <SidebarMenuitem label="Histogram" />
+                                </SidebarSubmenu>
+                            </SidebarDropdown>
+
+                            <SidemenubarHeader>Charts</SidemenubarHeader>
+
+                            <SidebarMenuitem label="Documentation" font="fa fa-book" badge={{ label: "Beta", type: "badge-primary" }} />
+                            <SidebarMenuitem label="Calendar" font="fa fa-calendar" />
+                            <SidebarMenuitem label="Examples" font="fa fa-folder" />
+
+                        </Sidemenubar>
+
+                    </SidebarContent>
+
+
+                </SidebarWrapper>
+
             </Dashboard>);
     }
 }

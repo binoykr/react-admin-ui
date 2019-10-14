@@ -1,18 +1,21 @@
 import React from 'react';
 
-class Sidemenubar extends React.Component {
+class SidebarWrapper extends React.Component {
 
     render() {
         const childrens = React.Children.map(this.props.children, children =>
             React.cloneElement(children)
         );
 
-        return (<div class="sidebar-menu">
-            <ul>
+        return (
+            <div class="sidebar-wrapper">
+
                 {childrens}
-            </ul>
-        </div>);
+
+            </div>
+
+        );
     }
 }
 
-export default Sidemenubar;
+export default SidebarWrapper;

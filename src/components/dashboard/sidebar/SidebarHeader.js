@@ -3,9 +3,9 @@ import React from 'react';
 class SidebarHeader extends React.Component {
 
     render() {
-        return (<li class="header-menu">
-            <span>{this.props.title}</span>
-        </li>);
+        return (
+            <div class="sidebar-heading">{this.props.children}</div>
+        );
     }
 }
 
