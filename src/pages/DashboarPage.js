@@ -20,6 +20,8 @@ import ToolbarDropdownFooter from '../components/dashboard/topbar/ToolbarDropdow
 import ToolbarDropdownFooterIcon from '../components/dashboard/topbar/ToolbarDropdownFooterIcon'
 import ToolbarDropdownContainer from '../components/dashboard/topbar/ToolbarDropdownContainer'
 import ToolbarDropdownItem from '../components/dashboard/topbar/ToolbarDropdownItem'
+import ToolbarDropdownProfile from '../components/dashboard/topbar/ToolbarDropdownProfile'
+import ToolbarDropdownDivider from '../components/dashboard/topbar/ToolbarDropdownDivider'
 
 
 class DashboardPage extends React.Component {
@@ -93,25 +95,25 @@ class DashboardPage extends React.Component {
 
                         <ToolbarIcon align="navbar-right">
 
-                            <ToolbarDropdown id="dropdownTopMenuNotification" icon="fa fa-bell" badge={{ label: "3", type: "badge-danger up" }}>
+                            <ToolbarDropdown id="dropdownTopMenuNotification" icon="fa fa-bell" badge={{ label: "3", type: "badge-danger" }}>
 
-                                <ToolbarDropdownHeader title="Notifications" badge={{ label: "New 3", type: "badge-danger up" }} />
+                                <ToolbarDropdownHeader title="Notifications" badge={{ label: "New 3", type: "badge-danger" }} />
 
                                 <ToolbarDropdownContainer>
 
-                                    <ToolbarDropdownItem icon="icon wb wb-order" color="bg-red-600"
+                                    <ToolbarDropdownItem type="media" icon="icon wb wb-order" color="bg-red-600"
                                         heading="A new order has been placed"
                                         meta="5 hours ago" />
-                                    <ToolbarDropdownItem icon="icon wb wb-user" color="bg-green-600"
+                                    <ToolbarDropdownItem type="media" icon="icon wb wb-user" color="bg-green-600"
                                         heading="Completed the task"
                                         meta="2 days ago" />
-                                    <ToolbarDropdownItem icon="icon wb wb-settings" color="bg-red-600"
+                                    <ToolbarDropdownItem type="media" icon="icon wb wb-settings" color="bg-red-600"
                                         heading="Settings updated"
                                         meta="2 days ago" />
-                                    <ToolbarDropdownItem icon="icon wb wb-calendar" color="bg-blue-600"
+                                    <ToolbarDropdownItem type="media" icon="icon wb wb-calendar" color="bg-blue-600"
                                         heading="Event started"
                                         meta="3 days ago" />
-                                    <ToolbarDropdownItem icon="icon wb wb-chat" color="bg-orange-600"
+                                    <ToolbarDropdownItem type="media" icon="icon wb wb-chat" color="bg-orange-600"
                                         heading="Message received"
                                         meta="3 days ago" />
 
@@ -122,6 +124,72 @@ class DashboardPage extends React.Component {
                                 </ToolbarDropdownFooter>
 
                             </ToolbarDropdown>
+
+
+                            <ToolbarDropdown id="dropdownTopMenuMessage" icon="fa fa-envelope" badge={{ label: "5", type: "badge-info" }}>
+
+                                <ToolbarDropdownHeader title="MESSAGES" badge={{ label: "New 5", type: "badge-info" }} />
+
+                                <ToolbarDropdownContainer>
+
+                                    <ToolbarDropdownItem
+                                        type="media" 
+                                        img={{
+                                            src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
+                                            size: "40px"
+                                        }}
+                                        heading="Mary Adams"
+                                        meta="30 minutes ago"
+                                        detail="Anyways, i would like just do it" />
+                                    <ToolbarDropdownItem
+                                        type="media" 
+                                        img={{
+                                            src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
+                                            size: "40px"
+                                        }}
+                                        heading="Caleb Richards"
+                                        meta="12 hours ago"
+                                        detail="I checheck the document. But there seems" />
+                                    <ToolbarDropdownItem
+                                        type="media" 
+                                        img={{
+                                            src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
+                                            size: "40px"
+                                        }}
+                                        heading="June Lane"
+                                        meta="2 days ago"
+                                        detail="Lorem ipsum Id consectetur et minim" />
+                                    <ToolbarDropdownItem
+                                        type="media" 
+                                        img={{
+                                            src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
+                                            size: "40px"
+                                        }}
+                                        heading="Edward Fletcher"
+                                        meta="3 days ago"
+                                        detail="Dolor et irure cupidatat commodo nostrud nostrud." />
+                                </ToolbarDropdownContainer>
+
+                                <ToolbarDropdownFooter label="See all messages">
+                                    <ToolbarDropdownFooterIcon icon="fa fa-cog" />
+                                </ToolbarDropdownFooter>
+
+                            </ToolbarDropdown>
+
+                            <ToolbarDropdownProfile id="dropdownTopMenuProfile"
+                                title="Hi, Binoy"
+                                img={{
+                                    src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
+                                    size: "30px"
+                                }}>
+
+                                <ToolbarDropdownItem type="basic" icon="icon wb wb-user" label="Profile" />
+                                <ToolbarDropdownItem type="basic" icon="icon wb wb-payment" label="Billing" />
+                                <ToolbarDropdownItem type="basic" icon="icon wb wb-settings" label="Settings" />
+                                <ToolbarDropdownDivider/>
+                                <ToolbarDropdownItem type="basic" icon="icon wb wb-power" label="Logout" />
+
+                            </ToolbarDropdownProfile>
 
                         </ToolbarIcon>
 
