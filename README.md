@@ -23,6 +23,11 @@ The below screans are available now
 * Profile dropdown view on dashboard
 <img src="docs/images/dashboard-profile.png" width="400" height="300">
 
+
+### Imported components to create dashpoard page 
+<img src="docs/images/codesample-imports.png" width="400" height="300">
+
+
 * Sign In URL http://localhost:3000/signin or http://localhost:3000/login
 <img src="docs/images/signin.png" width="400" height="300">
 
