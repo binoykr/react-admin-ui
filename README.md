@@ -25,7 +25,7 @@ The below screans are available now
 
 
 ### Imported components to create dashpoard page 
-<img src="docs/images/codesample-imports.png" width="400" height="300">
+<img src="docs/images/codesample-imports.png" width="500" height="300">
 
 
 * Sign In URL http://localhost:3000/signin or http://localhost:3000/login
