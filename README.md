@@ -12,7 +12,7 @@ The below screans are available now
 <img src="docs/images/dashboard.png" width="700" height="300">
 
 * Sidebar collapsed on dashboard
-<img src="docs/images/dashboard-sidebar-collapsed.png" width="700" height="300">
+<img src="docs/images/dashboard-sidebar-collapsed.png" width="700" height="200">
 
 * Notification dropdown view on dashboard
 <img src="docs/images/dashboard-notification.png" width="400" height="300">
