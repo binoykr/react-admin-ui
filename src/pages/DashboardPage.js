@@ -5,6 +5,15 @@ import PagePanel from '../components/dashboard/PagePanel'
 import PageContent from '../components/dashboard/PageContent'
 import Row from '../components/dashboard/Row'
 
+import Table from '../components/table/Table'
+import TableHead from '../components/table/TableHead'
+import TableBody from '../components/table/TableBody'
+import TableTr from '../components/table/TableTr'
+import TableTd from '../components/table/TableTd'
+import TableTh from '../components/table/TableTh'
+import ProgressBar from '../components/ProgressBar'
+
+
 
 class DashboardPage extends React.Component {
 
@@ -12,79 +21,69 @@ class DashboardPage extends React.Component {
         return (
             <PageContent>
                 <Row>
-                    <PagePanel title="Users Activity" cols="col-xxl-7 col-lg-4" height={{value: 200, unit:"px"}} id="dashboard-bar-1">
+                    <PagePanel title="Users Activity" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-bar-1">
 
                     </PagePanel>
-                    <PagePanel title="Visitors" cols="col-xxl-7 col-lg-4" height={{value: 200, unit:"px"}} id="dashboard-donut-1">
+                    <PagePanel title="Visitors" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-donut-1">
 
                     </PagePanel>
 
-                    <PagePanel title="Sales Events" cols="col-xxl-7 col-lg-4" height={{value: 200, unit:"px"}} id="dashboard-line-1" >
+                    <PagePanel title="Sales Events" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-line-1" >
 
                     </PagePanel>
                 </Row>
 
                 <Row>
                     <PagePanel title="Projects" cols="col-xxl-7 col-lg-12" >
+                        <Table>
+                            <TableHead>
+                                <TableTr>
+                                    <TableTh width="50%">Project</TableTh>
+                                    <TableTh width="20%">Status</TableTh>
+                                    <TableTh width="30%">Activity</TableTh>
+                                </TableTr>
+                            </TableHead>
+                            <TableBody>
+                                <TableTr>
+                                    <TableTd value={{ type: "strong" }}>Admin</TableTd>
+                                    <TableTd value={{ type: "label", label: "label-danger" }}>Developing</TableTd>
+                                    <TableTd>
+                                        <ProgressBar style="progress-bar-danger progress-bar-striped" percentage="40%">40%</ProgressBar>
+                                    </TableTd>
+                                </TableTr>
+                                <TableTr>
+                                    <TableTd value={{ type: "strong" }}>Gemini</TableTd>
+                                    <TableTd value={{ type: "label", label: "label-warning" }}>Updating</TableTd>
+                                    <TableTd>
+                                        <ProgressBar style="progress-bar-warning progress-bar-striped" percentage="50%">50%</ProgressBar>
+                                    </TableTd>
+                                </TableTr>
+                                <TableTr>
+                                    <TableTd value={{ type: "strong" }}>Taurus</TableTd>
+                                    <TableTd value={{ type: "label", label: "label-warning" }}>Updating</TableTd>
+                                    <TableTd>
+                                        <ProgressBar style="progress-bar-warning progress-bar-striped" percentage="80%">80%</ProgressBar>
+                                    </TableTd>
+                                </TableTr>
+                                <TableTr>
+                                    <TableTd value={{ type: "strong" }}>Taurus</TableTd>
+                                    <TableTd value={{ type: "label", label: "label-warning" }}>Support</TableTd>
+                                    <TableTd>
+                                        <ProgressBar style="progress-bar-success progress-bar-striped" percentage="100%">100%</ProgressBar>
+                                    </TableTd>
+                                </TableTr>
+                                <TableTr>
+                                    <TableTd value={{ type: "strong" }}>Virgo</TableTd>
+                                    <TableTd value={{ type: "label", label: "label-info" }}>Holding</TableTd>
 
-                            <table class="table table-bordered table-striped">
-                                <thead>
-                                    <tr>
-                                        <th width="50%">Project</th>
-                                        <th width="20%">Status</th>
-                                        <th width="30%">Activity</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Admin</strong></td>
-                                        <td><span class="label label-danger">Developing</span></td>
-                                        <td>
-                                            <div class="progress progress-small progress-striped active">
-                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style={{ width: "85%" }}>85%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Gemini</strong></td>
-                                        <td><span class="label label-warning">Updating</span></td>
-                                        <td>
-                                            <div class="progress progress-small progress-striped active">
-                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style={{ width: "40%" }}>40%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Taurus</strong></td>
-                                        <td><span class="label label-warning">Updating</span></td>
-                                        <td>
-                                            <div class="progress progress-small progress-striped active">
-                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style={{ width: "72%" }}>72%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Leo</strong></td>
-                                        <td><span class="label label-success">Support</span></td>
-                                        <td>
-                                            <div class="progress progress-small progress-striped active">
-                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}>100%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Virgo</strong></td>
-                                        <td><span class="label label-success">Support</span></td>
-                                        <td>
-                                            <div class="progress progress-small progress-striped active">
-                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}>100%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    <TableTd>
+                                        <ProgressBar style="progress-bar-info progress-bar-striped" percentage="90%">90%</ProgressBar>
+                                    </TableTd>
+                                </TableTr>
 
-                                </tbody>
-                            </table>
-                        
+                            </TableBody>
+                        </Table>
+
                     </PagePanel>
                 </Row>
 

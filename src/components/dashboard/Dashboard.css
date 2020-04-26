@@ -411,6 +411,51 @@
     background-color: #eb6709!important;
   }
 
+  .label {
+    font-weight: 500;
+  }
+
+  .label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+  }
+
+  .label-warning, .badge-warning {
+    background-color: #1caf9a;
+  }
+
+  .label-success, .badge-success {
+    background-color: #95b75d;
+  }
+
+  .label-info, .badge-info {
+    background-color: #5bc0de;
+  }
+
+  .progress-bar-danger {
+    background-color: #E04B4A;
+  }
+
+  .progress-bar-warning {
+    background-color: #1caf9a;
+  }
+
+  .progress-bar-success {
+    background-color: #95b75d;
+  }
+
+  .progress-bar-info {
+    background-color: #5bc0de;
+  }
+
   /*-------------------- theme: chiller - nav bar topbar ----------------------*/  
 
   .chiller-theme .navbar.topbar {
@@ -436,6 +481,10 @@
   .chiller-theme .dropdown-menu.style-media .item-group:hover {
     color: #76838f;
     background-color: #f3f7f9;
+  }
+
+  .label-danger, .badge-danger {
+    background-color: #E04B4A;
   }
 
   /*-------------------- theme: chiller - nav side bar ----------------------*/  
