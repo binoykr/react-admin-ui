@@ -1,4 +1,6 @@
 import React from 'react';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+
 import Dashboard from '../components/dashboard/Dashboard'
 
 import SidebarWrapper from '../components/dashboard/sidebar/SidebarWrapper'
@@ -23,8 +25,9 @@ import ToolbarDropdownItem from '../components/dashboard/topbar/ToolbarDropdownI
 import ToolbarDropdownProfile from '../components/dashboard/topbar/ToolbarDropdownProfile'
 import ToolbarDropdownDivider from '../components/dashboard/topbar/ToolbarDropdownDivider'
 
+import DashboardPage from './DashboardPage'
 
-class DashboardPage extends React.Component {
+class DashboardMainPage extends React.Component {
 
     render() {
 
@@ -40,7 +43,7 @@ class DashboardPage extends React.Component {
                                 badge={{ label: "New", type: "badge-warning" }}>
 
                                 <SidebarSubmenu>
-                                    <SidebarMenuitem label="Dashboard 1" badge={{ label: "Pro", type: "badge-success" }} />
+                                    <SidebarMenuitem label="Dashboard 1" badge={{ label: "Pro", type: "badge-success" }} href="/dashboard-page" />
                                     <SidebarMenuitem label="Dashboard 2" />
                                     <SidebarMenuitem label="Dashboard 3" />
                                 </SidebarSubmenu>
@@ -133,7 +136,7 @@ class DashboardPage extends React.Component {
                                 <ToolbarDropdownContainer>
 
                                     <ToolbarDropdownItem
-                                        type="media" 
+                                        type="media"
                                         img={{
                                             src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
                                             size: "40px"
@@ -142,7 +145,7 @@ class DashboardPage extends React.Component {
                                         meta="30 minutes ago"
                                         detail="Anyways, i would like just do it" />
                                     <ToolbarDropdownItem
-                                        type="media" 
+                                        type="media"
                                         img={{
                                             src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
                                             size: "40px"
@@ -151,7 +154,7 @@ class DashboardPage extends React.Component {
                                         meta="12 hours ago"
                                         detail="I checheck the document. But there seems" />
                                     <ToolbarDropdownItem
-                                        type="media" 
+                                        type="media"
                                         img={{
                                             src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
                                             size: "40px"
@@ -160,7 +163,7 @@ class DashboardPage extends React.Component {
                                         meta="2 days ago"
                                         detail="Lorem ipsum Id consectetur et minim" />
                                     <ToolbarDropdownItem
-                                        type="media" 
+                                        type="media"
                                         img={{
                                             src: "https://raw.githubusercontent.com/binoykr/top-navbar-bootstrap/master/public/imgs/user-binoy.jpg",
                                             size: "40px"
@@ -186,7 +189,7 @@ class DashboardPage extends React.Component {
                                 <ToolbarDropdownItem type="basic" icon="icon wb wb-user" label="Profile" />
                                 <ToolbarDropdownItem type="basic" icon="icon wb wb-payment" label="Billing" />
                                 <ToolbarDropdownItem type="basic" icon="icon wb wb-settings" label="Settings" />
-                                <ToolbarDropdownDivider/>
+                                <ToolbarDropdownDivider />
                                 <ToolbarDropdownItem type="basic" icon="icon wb wb-power" label="Logout" />
 
                             </ToolbarDropdownProfile>
@@ -194,10 +197,23 @@ class DashboardPage extends React.Component {
                         </ToolbarIcon>
 
                     </Topbar>
+
+                    <Router>
+                        <Switch>
+                            <Route exact path="/">
+                                <DashboardPage />
+                            </Route>
+
+                            <Route exact path="/dashboard-page">
+                                <DashboardPage />
+                            </Route>
+                        </Switch>
+                    </Router>
+
                 </PageContentWrapper>
 
             </Dashboard>);
     }
 }
 
-export default DashboardPage;
+export default DashboardMainPage;

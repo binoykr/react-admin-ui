@@ -7,6 +7,83 @@
     overflow-x: hidden;
   }  
 
+  /*-------------------- table ----------------------*/
+
+  table .table {
+    border: 0px;
+    margin-bottom: 0px;
+  }
+
+  table .table-bordered {
+    border: 1px solid #dee2e6;
+  }
+
+  .table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+  }
+
+  .table th {
+    padding: 8px 10px;
+  }
+
+  .table > thead > tr > th {
+    font-size: 12px;
+  }
+
+  .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-width: 1px;
+  }
+
+  .table > tbody > tr > td {
+    font-size: 12px;
+  }
+
+  .table .table tr > td:first-child, .table tr > th:first-child {
+    border-left: 0px;
+  }
+
+  .table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  /*-------------------- page-content ----------------------*/
+
+  .page-content-wrapper .page-content {
+    margin: 10px 10px 10px 0px;
+    padding-right: 25px;
+  }
+
+  .page-content-wrapper .page-content .page-panel {
+    padding: 0px;
+  }
+  
+  .page-content-wrapper .page-content .page-panel .body .title {
+    padding: 10px 0px 5px 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+
+  .page-content-wrapper .page-content .page-panel .body .detail {
+    padding: 10px 10px 5px 10px;
+    display: block;
+  }
+
+  .page-content-wrapper .page-content .page-panel .body {
+    margin-left: 10px;
+    display: block;
+    padding: 0px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .page-content-wrapper .page-content .row {
+    margin: 10px 0px 0px 0px;
+  }
+
+  
+  
+
   /*-------------------- sidebar: wrapper ----------------------*/
 
   .sidebar-wrapper {
@@ -368,6 +445,19 @@
     background-color: #31353D!important;
   }
 
+  .chiller-theme .page-content-wrapper {
+    background-color: #414348!important;
+  }
+
+  .chiller-theme .page-content-wrapper .page-content .page-panel .body {
+    background-color: #31353d!important;
+  }
+
+  .chiller-theme .page-content-wrapper .page-content .page-panel .title {
+    color: #ffffff!important;
+    border-bottom-color: #252629;
+  }
+
   .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar a {
       color: #818896!important;
   }
@@ -393,4 +483,38 @@
 
   .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar .header span {
       color: #6c7b88!important;
+  }
+
+  /*-------------------- theme: chiller - table ----------------------*/  
+  .chiller-theme .table > thead > tr > th {
+    background: rgb(48, 50, 56, 1);
+    color: #56688A;
+  }
+
+  .chiller-theme .table > thead > tr > th, .table > tbody > tr > th, 
+  .table > tfoot > tr > th, .table > thead > tr > td, 
+  .table > tbody > tr > td, 
+  .table > tfoot > tr > td {
+    border-color: #383c44;
+  }
+
+  .chiller-theme .table > tbody > tr > td {
+    background: #3a3f48;
+    color: #56688A;
+  }
+
+  .chiller-theme .table .table tr > td:first-child, .table tr > th:first-child {
+    border-left: 0px;
+  }
+
+  .chiller-theme .table-bordered>thead>tr>th, 
+  .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, 
+  .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, 
+  .table-bordered>tfoot>tr>td {
+    border: 1px solid #383c44;
+  }
+
+  .chiller-theme .table-striped > tbody > tr:nth-child(odd) > td, 
+  .table-striped > tbody > tr:nth-child(odd) > th {
+    background: #3a3d44;
   }

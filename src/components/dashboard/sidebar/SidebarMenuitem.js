@@ -14,8 +14,13 @@ class SidebarMenuitem extends React.Component {
             font = <i class={this.props.font}></i>;
         }
 
+        var href = "#";
+        if(this.props.href != null) {
+            href = this.props.href;
+        }
+
         return (<li>
-            <a href="#">
+            <a href={href}>
                 {font}
                 <span>{this.props.label}</span>
                 {badge}

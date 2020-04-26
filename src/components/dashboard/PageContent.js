@@ -1,6 +1,6 @@
 import React from 'react';
 
-class PageContentWrapper extends React.Component {
+class PageContent extends React.Component {
 
 
   render() {
@@ -10,7 +10,7 @@ class PageContentWrapper extends React.Component {
 
     return (
 
-      <div class="page-content-wrapper">
+      <div class="page-content container-fluid">
 
         {childrens}
 
@@ -20,4 +20,4 @@ class PageContentWrapper extends React.Component {
   }
 }
 
-export default PageContentWrapper;
+export default PageContent;
