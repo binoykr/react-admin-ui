@@ -45,35 +45,35 @@ class DashboardPage extends React.Component {
                             </TableHead>
                             <TableBody>
                                 <TableTr>
-                                    <TableTd value={{ type: "strong" }}>Admin</TableTd>
+                                    <TableTd>Admin</TableTd>
                                     <TableTd value={{ type: "label", label: "label-danger" }}>Developing</TableTd>
                                     <TableTd>
                                         <ProgressBar style="progress-bar-danger progress-bar-striped" percentage="40%">40%</ProgressBar>
                                     </TableTd>
                                 </TableTr>
                                 <TableTr>
-                                    <TableTd value={{ type: "strong" }}>Gemini</TableTd>
+                                    <TableTd>Gemini</TableTd>
                                     <TableTd value={{ type: "label", label: "label-warning" }}>Updating</TableTd>
                                     <TableTd>
                                         <ProgressBar style="progress-bar-warning progress-bar-striped" percentage="50%">50%</ProgressBar>
                                     </TableTd>
                                 </TableTr>
                                 <TableTr>
-                                    <TableTd value={{ type: "strong" }}>Taurus</TableTd>
+                                    <TableTd>Taurus</TableTd>
                                     <TableTd value={{ type: "label", label: "label-warning" }}>Updating</TableTd>
                                     <TableTd>
                                         <ProgressBar style="progress-bar-warning progress-bar-striped" percentage="80%">80%</ProgressBar>
                                     </TableTd>
                                 </TableTr>
                                 <TableTr>
-                                    <TableTd value={{ type: "strong" }}>Taurus</TableTd>
-                                    <TableTd value={{ type: "label", label: "label-warning" }}>Support</TableTd>
+                                    <TableTd>Taurus</TableTd>
+                                    <TableTd value={{ type: "label", label: "label-success" }}>Support</TableTd>
                                     <TableTd>
                                         <ProgressBar style="progress-bar-success progress-bar-striped" percentage="100%">100%</ProgressBar>
                                     </TableTd>
                                 </TableTr>
                                 <TableTr>
-                                    <TableTd value={{ type: "strong" }}>Virgo</TableTd>
+                                    <TableTd>Virgo</TableTd>
                                     <TableTd value={{ type: "label", label: "label-info" }}>Holding</TableTd>
 
                                     <TableTd>
