@@ -1,5 +1,8 @@
 $(function () {
 
+  
+    
+
     /* Bar dashboard chart */
     Morris.Bar({
         element: 'dashboard-bar-1',
