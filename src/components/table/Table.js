@@ -2,6 +2,9 @@ import React from 'react';
 
 class Table extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     const childrens = React.Children.map(this.props.children, children =>
