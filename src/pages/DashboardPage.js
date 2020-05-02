@@ -11,28 +11,29 @@ import TableBody from '../components/table/TableBody'
 import TableTr from '../components/table/TableTr'
 import TableTd from '../components/table/TableTd'
 import TableTh from '../components/table/TableTh'
-import DataTable from '../components/table/DataTable'
 
 import ProgressBar from '../components/ProgressBar'
+import Widget from '../components/dashboard/Widget'
 
 class DashboardPage extends React.Component {
 
     render() {
 
-        
+
         return (
             <PageContent>
                 <Row>
-                    <PagePanel title="Users Activity" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-bar-1">
 
-                    </PagePanel>
-                    <PagePanel title="Visitors" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-donut-1">
+                    <Widget icon="fa fa-envelope" numcount="48" title="New messages" subtitle="In your mailbox" cols="col-xxl-7 col-lg-3" />
+                    <Widget icon="fa fa-user" numcount="356" title="REGISTRED USERS" subtitle="On your website" cols="col-xxl-7 col-lg-3" />
 
-                    </PagePanel>
+                </Row>
+                <Row>
+                    <PagePanel title="Users Activity" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-bar-1" />
 
-                    <PagePanel title="Sales Events" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-line-1" >
+                    <PagePanel title="Visitors" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-donut-1" />
 
-                    </PagePanel>
+                    <PagePanel title="Sales Events" cols="col-xxl-7 col-lg-4" height={{ value: 200, unit: "px" }} id="dashboard-line-1" />
                 </Row>
                 <Row>
                     <PagePanel title="Projects - 2" cols="col-xxl-7 col-lg-12" >
