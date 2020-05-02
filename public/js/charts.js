@@ -1,6 +1,6 @@
 $(function () {
 
-  
+    $('#example').DataTable();
     
 
     /* Bar dashboard chart */

@@ -1,6 +1,6 @@
 jQuery(function ($) {
 
-    $('#example').DataTable();
+    
     
     $(".sidebar-dropdown > a").click(function () {
         $(".sidebar-submenu").slideUp(200);
@@ -47,4 +47,6 @@ jQuery(function ($) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+
+    
 });
