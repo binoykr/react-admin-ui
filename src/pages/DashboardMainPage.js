@@ -26,6 +26,8 @@ import ToolbarDropdownProfile from '../components/dashboard/topbar/ToolbarDropdo
 import ToolbarDropdownDivider from '../components/dashboard/topbar/ToolbarDropdownDivider'
 
 import DashboardPage from './DashboardPage'
+import DataTablePage from './DataTablePage'
+
 
 class DashboardMainPage extends React.Component {
 
@@ -43,9 +45,8 @@ class DashboardMainPage extends React.Component {
                                 badge={{ label: "New", type: "badge-warning" }}>
 
                                 <SidebarSubmenu>
-                                    <SidebarMenuitem label="Dashboard 1" badge={{ label: "Pro", type: "badge-success" }} href="/dashboard-page" />
-                                    <SidebarMenuitem label="Dashboard 2" />
-                                    <SidebarMenuitem label="Dashboard 3" />
+                                    <SidebarMenuitem label="Dashboard" badge={{ label: "Pro", type: "badge-success" }} href="/dashboard-page" />
+                                    <SidebarMenuitem label="Data Table" href="/data-table"/>
                                 </SidebarSubmenu>
                             </SidebarDropdown>
 
@@ -206,6 +207,10 @@ class DashboardMainPage extends React.Component {
 
                             <Route exact path="/dashboard-page">
                                 <DashboardPage />
+                            </Route>
+
+                            <Route exact path="/data-table">
+                                <DataTablePage />
                             </Route>
                         </Switch>
                     </Router>
