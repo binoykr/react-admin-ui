@@ -5,6 +5,8 @@ I am introducing the example codes for creating the Admin React Application. It 
 
 * npm start
 
+Note: These components are implemented in the [My Cloud Project](https://github.com/developerhelperhub/my-cloud-service)
+
 ## Available Components
 * Dashboard
 * Sidebar
@@ -45,8 +47,6 @@ I am introducing the example codes for creating the Admin React Application. It 
 * NonAuthenticationRoute
 * Main
 * ProgressBar
-
-These components are implemented in the [My Cloud Project](https://github.com/developerhelperhub/my-cloud-service)
 
 ## Screens
 The below screans are available now
