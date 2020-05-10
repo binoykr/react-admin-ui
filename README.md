@@ -33,6 +33,9 @@ Note: These components are implemented in the [My Cloud Project](https://github.
 * PageContent
 * PageContentWrapper
 * PagePanel
+  * PagePanelHead
+  * PagePanelIcon
+  * PagePanelBody
 * Row
 * Widget
 * Table
