@@ -15,11 +15,11 @@ I am introducing the example codes for creating the Admin React Application. It 
 * Row
 * Widget
 * Table
-** TableHead
-** TableHead
-** TableTd
-** TableTh
-** TableTr
+ - TableHead
+ - TableHead
+ - TableTd
+ - TableTh
+ - TableTr
 * Datatable
 * ApiRepo
 * AuthenticationRoute
