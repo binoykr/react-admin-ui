@@ -5,6 +5,27 @@ I am introducing the example codes for creating the Admin React Application. It 
 
 * npm start
 
+## Available Components
+* Dashboard
+* Sidebar
+* Topbar
+* PageContent
+* PageContentWrapper
+* PagePanel
+* Row
+* Widget
+* Table
+** TableHead
+** TableHead
+** TableTd
+** TableTh
+** TableTr
+* Datatable
+* ApiRepo
+* AuthenticationRoute
+* NonAuthenticationRoute
+* Main
+* ProgressBar
 
 ## Screens
 The below screans are available now
