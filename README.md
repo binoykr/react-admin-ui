@@ -59,6 +59,9 @@ The below screans are available now
 * Data table view
 <img src="docs/images/dashboard-datatable.png" width="700" height="300">
 
+* D3 Chart
+<img src="docs/images/dashboard-d3-chart.png" width="700" height="300">
+
 * Sidebar collapsed on dashboard
 <img src="docs/images/dashboard-sidebar-collapsed.png" width="700" height="200">
 
