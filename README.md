@@ -36,6 +36,13 @@ Note: These components are implemented in the [My Cloud Project](https://github.
   * PagePanelHead
   * PagePanelIcon
   * PagePanelBody
+* PageTabPanel
+  * PageTab
+  * PageTabHead
+  * PageTabContent
+  * PageTabPane
+* InfoBox
+  * InfoBoxItem
 * Row
 * Widget
 * Table
